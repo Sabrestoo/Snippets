@@ -1,10 +1,16 @@
+/* wrap everything in container */
+.container {
+    width: 80vw;
+    margin: auto;
+}
 
 /* hero image becomes fixed. Text, etc then scrolls over image whilst within the hero container. 
-Once scrolling passes hero container the image also scrolls again*/
+Once scrolling passes hero container the image also scrolls again. Is repeatable */
 .sticky-hero-media {
     position: sticky; /* becomes fixed when offset of top position is met */
     top: 0;
     height: 100vh;
+    
     background: url('img/fitness.jpg') no-repeat center center;
     background-size: cover;
     z-index: 1;
