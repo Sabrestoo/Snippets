@@ -1,0 +1,20 @@
+
+/* hero image becomes fixed. Text, etc then scrolls over image whilst within the hero container. 
+Once scrolling passes hero container the image also scrolls again*/
+.sticky-hero-media {
+    position: sticky; /* becomes fixed when offset of top position is met */
+    top: 0;
+    height: 100vh;
+    background: url('img/fitness.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+.sticky-hero-content {
+    position: relative;  /* needed to see content above hero img */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
